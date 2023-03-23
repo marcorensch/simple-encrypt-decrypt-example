@@ -2,8 +2,8 @@ import * as crypto from "crypto";
 
 class Encryption {
     constructor() {
-        this.algorithm = "aes-256-ctr";
-        this.secretKey = "vOVH6sdmpNWjRRIqCc7rdxs01lwHzfr3";
+        this.algorithm = "aes-256-ctr";     // <<<< Use a local .env file instead
+        this.secretKey = "[YOUR KEY]";      // like: "vOVl6sdmpNWjRRIqCa7rdxs01lwHzfr5" <<<< Use a local .env file instead
     }
     encrypt (text) {
         const iv = crypto.randomBytes(16);
